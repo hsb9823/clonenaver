@@ -16,17 +16,26 @@ div #header-center {
     width: 1130px;
 }
 
+/* #service_area {
+    position: absolute;
+    top: 12px;
+    right: 27px;
+} */
+
 #header-search a {
     text-decoration: none;
 }
 #header-search h1 {
+    display: inline-block;
     width: 222px;
     height: 52px;
-    display: inline-block;
     background-size: 442px 428px;
     background-image: url(./sp_main_947f65.png);
     background-position: 0px -158px;
+    margin: 0;
     vertical-align: middle;
+    position: relative;
+    top: -5px;
 }
 
 /* #header-search > h2 {
@@ -38,33 +47,36 @@ div #header-center {
 
 #header-search fieldset {
     margin-left: 20px;
-    /* padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 12px;
-    padding-bottom: 12px; */
-    padding: 12px 10px 12px 10px;
-    /* border-top: 2px solid #03cf5d;
-    border-left: 2px solid #03cf5d;
-    border-right: 2px solid #03cf5d;
-    border-bottom: 2px solid #03cf5d; */
+    padding: 12px 0px 12px 10px;
     border: 2px solid #03cf5d;
     width: 582px;
     height: 52px;
     display: inline-block;
+    position: relative;
+    border-radius: 2px;
 }
+/* block format context 중요 개념 알고 있기 */
+/* mdn stacking context */
 #header-search fieldset input {
+    width: 405px;
+    height: 23px;
     border: none;
     padding: 0;
     outline: none;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 #header-search fieldset button {
-    width: 56px;
-    height: 56px;
+    width: 52px;
+    height: 51.8px;
     border: none;
-    padding: none;
-    background-color: #03cf5d;
+    padding: 0;
+    background: #03cf5d;
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
    
 }
 
